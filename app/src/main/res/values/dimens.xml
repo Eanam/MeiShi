@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="itemIconWidth">60dp</dimen>
+    <dimen name="idtemIconHeight">56dp</dimen>
+    <dimen name="titleSize">16dp</dimen>
+    <dimen name="itemMargin">2dp</dimen>
+    <dimen name="shopNameSize">20dp</dimen>
+    <dimen name="commentMargin">4dp</dimen>
+    <dimen name="commentHeight">100dp</dimen>
+    <dimen name="photoBarSize">80dp</dimen>
+    <dimen name="textBarSize">60dp</dimen>
+</resources>

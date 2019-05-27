@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_shopdetail"
+    android:padding="@dimen/itemMargin"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/shopNameSize"
+        android:text="店名"
+        android:textStyle="bold"
+        android:layout_margin="@dimen/itemMargin"/>
+
+
+    <ImageView
+        android:layout_below="@+id/tv_name"
+        android:id="@+id/iv_shopPic"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="@dimen/itemMargin"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_shopmedal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_shopPic"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/medal"
+            android:layout_margin="@dimen/itemMargin"/>
+
+        <com.meishi.views.StarBar
+            android:id="@+id/shop_points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:starCount="5"
+            app:starDistance="2dp"
+            app:starSize="11dp"
+            app:starEmpty="@drawable/ic_empty"
+            app:starFill="@drawable/ic_full"
+            android:layout_margin="@dimen/itemMargin"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/ll_shopmedal">
+
+        <ImageView
+            android:id="@+id/iv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/location"
+            android:layout_margin="@dimen/itemMargin"/>
+
+        <TextView
+            android:id="@+id/shop_location"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_location"
+            android:layout_margin="@dimen/itemMargin"
+            android:text="店铺地址"
+            android:textSize="@dimen/textSize"
+            />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

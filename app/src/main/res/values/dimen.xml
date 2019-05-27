@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="navBarHeight">56dp</dimen>
+    <dimen name="marginSize">12dp</dimen>
+    <dimen name="inputViewHeight">44dp</dimen>
+    <dimen name="navBarTitleSize">22sp</dimen>
+    <dimen name="inputTextView">22sp</dimen>
+    <dimen name="textSize">14sp</dimen>
+    <dimen name="infoSize">12sp</dimen>
+
+    <dimen name="commitButtonHeight">44dp</dimen>
+    <dimen name="radius">5dp</dimen>
+    <dimen name="itemHeight">44dp</dimen>
+
+    <dimen name="recommendMarginSize">4dp</dimen>
+    <dimen name="albumMarginSize">4dp</dimen>
+    <dimen name="playNumImgSize">18dp</dimen>
+    <dimen name="itemIconSize">56dp</dimen>
+    <dimen name="itemPlaySize">36dp</dimen>
+    <dimen name="discTopSize">90dp</dimen>
+    <dimen name="playMusicIconSize">210dp</dimen>
+    <dimen name="needleMarginSize">25dp</dimen>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+
+
+</resources>

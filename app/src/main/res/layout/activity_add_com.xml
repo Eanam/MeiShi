@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.AddComActivity">
+
+    <include layout="@layout/nav_bar3"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/itemMargin">
+
+        <ImageView
+            android:id="@+id/iv_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/itemMargin"
+            android:src="@mipmap/comment"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_comment"
+            android:layout_margin="@dimen/itemMargin"
+            android:text="菜品评论"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+        <View
+            style="@style/line"
+            android:layout_below="@+id/iv_comment"
+            android:id="@+id/line0"/>
+        <EditText
+            android:id="@+id/ed_comment"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/line0"
+            android:background="@null"
+            android:layout_margin="@dimen/itemMargin"
+            android:gravity="top"/>
+
+    </RelativeLayout>
+    <View
+        android:id="@+id/divide_line"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/lineColor"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/itemMargin">
+
+        <ImageView
+            android:id="@+id/iv_star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/itemMargin"
+            android:src="@mipmap/food"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_star"
+            android:layout_margin="@dimen/itemMargin"
+            android:text="菜品评分"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+        <com.meishi.views.StarBar
+            android:id="@+id/com_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_star"
+            app:starCount="5"
+            app:starSize="50dp"
+            app:starDistance="5dp"
+            app:starFill="@drawable/ic_full"
+            app:starEmpty="@drawable/ic_empty"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
+    </RelativeLayout>
+</LinearLayout>

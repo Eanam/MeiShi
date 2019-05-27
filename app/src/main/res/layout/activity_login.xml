@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.LoginActivity">
+
+    <include layout="@layout/nav_bar"/>
+
+    <ImageView
+        android:layout_width="295dp"
+        android:layout_height="235dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/marginSize"
+        android:src="@mipmap/logo" />
+
+    <com.meishi.views.InputView
+        android:id="@+id/input_phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/inputViewHeight"
+        android:layout_marginTop="@dimen/marginSize"
+        app:input_icon="@mipmap/phone"
+        app:input_hint="@string/phone"
+        app:is_password="false">
+
+    </com.meishi.views.InputView>
+
+    <View
+        style="@style/line"/>
+
+    <com.meishi.views.InputView
+        android:id="@+id/input_password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/inputViewHeight"
+        app:input_icon="@mipmap/password"
+        app:input_hint="@string/password"
+        app:is_password="true">
+
+    </com.meishi.views.InputView>
+
+    <View
+        style="@style/line"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/regist"
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/marginSize"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/mainColor"
+        android:onClick="onRegisterClick"/>
+
+    <Button
+        android:id="@+id/bt_commit"
+        style="@style/commitButton"
+        android:text= "@string/login_btn"
+        android:layout_marginTop="@dimen/marginSize"/>
+</LinearLayout>

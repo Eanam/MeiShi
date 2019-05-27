@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_shopName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/titleSize"
+            android:layout_margin="@dimen/itemMargin"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"/>
+
+        <Button
+            android:id="@+id/bt_delete"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/delete"
+            android:textSize="@dimen/infoSize"
+            android:textColor="@android:color/white"
+            android:background="@color/deleteColor"
+            android:layout_margin="@dimen/itemMargin"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_goodPic"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="@dimen/itemMargin"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            />
+
+        <TextView
+            android:id="@+id/tv_goodName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSize"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/iv_goodPic"
+            android:layout_margin="@dimen/itemMargin"/>
+
+        <TextView
+            android:id="@+id/tv_comDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_goodPic"
+            android:layout_below="@+id/tv_goodName"
+            android:textSize="@dimen/infoSize"
+            android:layout_margin="@dimen/itemMargin"/>
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

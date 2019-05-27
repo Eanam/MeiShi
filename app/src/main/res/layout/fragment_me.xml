@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+        <RelativeLayout
+            android:id="@+id/rl_headPic"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/photoBarSize"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_introText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="头像"
+                android:layout_margin="@dimen/itemMargin"/>
+
+            <ImageView
+                android:id="@+id/right_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/right_arrow"
+                android:layout_marginTop="10dp"/>
+
+            <ImageView
+                android:id="@+id/iv_headPic"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_toLeftOf="@+id/right_arrow"
+                android:src="@mipmap/robot"
+                android:layout_margin="@dimen/itemMargin"/>
+        </RelativeLayout>
+
+        <View
+            style="@style/line"/>
+
+        <com.meishi.views.TextBar
+            android:id="@+id/tb_nickname"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/textBarSize"
+            app:inroText="名称"
+            app:contentText=""
+            app:enableEdit="true">
+        </com.meishi.views.TextBar>
+
+        <View
+            style="@style/line"/>
+        <com.meishi.views.TextBar
+            android:id="@+id/tb_phone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/textBarSize"
+            app:inroText="手机号"
+            app:contentText=""
+            app:enableEdit="false"
+            android:clickable="false">
+        </com.meishi.views.TextBar>
+
+        <View
+            style="@style/line"/>
+        <com.meishi.views.TextBar
+            android:id="@+id/tb_sex"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/textBarSize"
+            app:inroText="性别"
+            app:contentText=""
+            app:enableEdit="true">
+        </com.meishi.views.TextBar>
+
+        <View
+            style="@style/line"/>
+        <com.meishi.views.TextBar
+            android:id="@+id/tb_birth"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/textBarSize"
+            app:inroText="生日"
+            app:contentText=""
+            app:enableEdit="true">
+        </com.meishi.views.TextBar>
+
+        <View
+            style="@style/line"/>
+        <com.meishi.views.TextBar
+            android:id="@+id/tb_desc"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/textBarSize"
+            app:inroText="个性签名"
+            app:contentText=""
+            app:enableEdit="true">
+        </com.meishi.views.TextBar>
+
+        <View
+            style="@style/line"/>
+        <com.meishi.views.TextBar
+            android:id="@+id/tb_comHistory"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/textBarSize"
+            app:inroText="历史评论"
+            app:contentText=""
+            app:enableEdit="true">
+        </com.meishi.views.TextBar>
+
+        <Button
+            android:id="@+id/bt_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:textSize="@dimen/inputTextView"
+            android:text="@string/logout"
+            android:background="@color/mainColor"/>
+
+
+    </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

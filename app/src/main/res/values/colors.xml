@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <!--主色调-->
+    <color name="mainColor">#A2E67B</color>
+    <color name="mainColorH">#7BD665</color>
+    <color name="colorStatusBar">#A2E67B</color>
+    <color name="lineColor">#c3c3c3</color>
+    <color name="shortlineColor">#D8EECC</color>
+    <color name="itemColorH">#DEE1E6</color>
+    <color name="recommendColor">#333333</color>
+    <color name="infoColor">#888888</color>
+    <color name="deleteColor">#EC1017</color>
+
+</resources>

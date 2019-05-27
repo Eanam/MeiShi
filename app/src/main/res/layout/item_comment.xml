@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tv_commenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="@dimen/commentMargin"
+        android:padding="@dimen/itemMargin"
+        android:textSize="@dimen/textSize"
+        android:text="评论人id"/>
+
+    <com.meishi.views.StarBar
+        android:id="@+id/comment_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/commentMargin"
+        android:padding="@dimen/itemMargin"
+        android:layout_alignTop="@+id/tv_commenter"
+        app:starCount="5"
+        app:starDistance="6dp"
+        app:starSize="14dp"
+        app:starEmpty="@drawable/ic_empty"
+        app:starFill="@drawable/ic_full"/>
+
+    <View
+        android:id="@+id/line0"
+        style="@style/shortline"
+        android:layout_below="@+id/tv_commenter"/>
+
+    <TextView
+        android:id="@+id/comment_content"
+        android:layout_below="@+id/line0"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/commentHeight"
+        android:layout_margin="@dimen/commentMargin"
+        android:padding="@dimen/itemMargin"
+        android:maxLines="3"
+        android:ellipsize="end"
+        android:textSize="@dimen/inputTextView"
+        android:text="@string/tempComment"/>
+
+    <TextView
+        android:id="@+id/comment_date"
+        android:layout_below="@+id/comment_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/commentMargin"
+        android:padding="@dimen/itemMargin"
+        android:textSize="@dimen/infoSize"
+        android:layout_alignParentLeft="true"
+        android:text="2019-12-20 09:51"
+        android:textColor="@android:color/darker_gray"/>
+
+
+
+</RelativeLayout>

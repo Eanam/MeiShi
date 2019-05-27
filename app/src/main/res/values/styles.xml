@@ -1,0 +1,68 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorStatusBar</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+        <!--<item name="android:statusBarColor">@color/colorStatusBar</item>-->
+    </style>
+
+    <!--定义全局动画-->
+    <style name="AnimationActivity"   parent="android:style/Animation.Activity">
+
+        <!--打开Activity时，新进入的Activity执行动画-->
+        <item name="android:activityOpenEnterAnimation">@anim/open_enter</item>
+        <!--打开Activity时，退出的Activity执行动画-->
+        <item name="android:activityOpenExitAnimation">@anim/open_exit</item>
+
+        <!--退出Activity时，退出Acitivity执行的动画-->
+        <item name="android:activityCloseExitAnimation">@anim/close_exit</item>
+        <!--退出Activity时，进入的Acitivity执行的动画-->
+        <item name="android:activityCloseEnterAnimation">@anim/close_enter</item>
+    </style>
+
+    <!--定义分割线-->
+    <style name="line">
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/lineColor</item>
+        <item name="android:layout_margin">3dp</item>
+    </style>
+
+    <!--定义分割线-->
+    <style name="shortline">
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/shortlineColor</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:layout_marginBottom">3dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+    </style>
+
+    <!--登录注册按钮-->
+    <style name="commitButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/commitButtonHeight</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/textSize</item>
+        <item name="android:layout_marginLeft">@dimen/marginSize</item>
+        <item name="android:layout_marginRight">@dimen/marginSize</item>
+        <item name="android:gravity">center</item>
+        <!--背景颜色要实现点击和未点击的区别-->
+        <item name="android:background">@drawable/btn_commit_selector</item>
+    </style>
+
+    <style name="MyDialogStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item><!--背景透明-->
+        <item name="android:windowFrame">@null</item><!--边框-->
+        <item name="android:windowNoTitle">true</item><!--无标题-->
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">true</item><!--半透明-->
+        <item name="android:windowContentOverlay">@null</item><!--内容覆盖 -->
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item><!-- 窗口样式Dialog -->
+        <item name="android:backgroundDimEnabled">true</item><!--模糊-->
+        　</style>
+</resources>

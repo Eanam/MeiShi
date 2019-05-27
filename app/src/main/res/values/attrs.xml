@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--声明样式-->
+    <declare-styleable name="inputView">
+        <!--声明变量-->
+        <!--输入框前面的小图标-->
+        <attr name="input_icon" format="reference"></attr>
+        <!--输入框内的提示内容-->
+        <attr name="input_hint" format="string"></attr>
+        <!--输入框内容是否需要以密文形式展示-->
+        <attr name="is_password" format="boolean"></attr>
+    </declare-styleable>
+
+    <!--声明starBar的样式-->
+    <declare-styleable name="StarBar">
+        <!--星星间距-->
+        <attr name="starDistance" format="dimension" />
+        <!--星星大小-->
+        <attr name="starSize" format="dimension" />
+        <!--星星个数-->
+        <attr name="starCount" format="integer" />
+        <!--星星空图-->
+        <attr name="starEmpty" format="reference" />
+        <!--星星满图-->
+        <attr name="starFill" format="reference" />
+    </declare-styleable>
+
+
+    <!--定义其他资料条-->
+    <declare-styleable name="textBar">
+        <attr name="inroText" format="string"/>
+        <attr name="contentText" format="string"/>
+        <attr name="enableEdit" format="boolean"/>
+    </declare-styleable>
+</resources>

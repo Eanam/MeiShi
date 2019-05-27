@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.RegisterActivity">
+
+    <include layout="@layout/nav_bar"/>
+
+    <ImageView
+        android:layout_width="295dp"
+        android:layout_height="235dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/marginSize"
+        android:src="@mipmap/logo" />
+
+    <com.meishi.views.InputView
+        android:id="@+id/input_phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/inputViewHeight"
+        android:layout_marginTop="@dimen/marginSize"
+        app:input_icon="@mipmap/phone"
+        app:input_hint="@string/re_phone"
+        app:is_password="false">
+
+    </com.meishi.views.InputView>
+
+    <View
+        style="@style/line"/>
+
+    <com.meishi.views.InputView
+        android:id="@+id/input_password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/inputViewHeight"
+        app:input_icon="@mipmap/password"
+        app:input_hint="@string/re_password"
+        app:is_password="true">
+
+    </com.meishi.views.InputView>
+
+    <View
+        style="@style/line"/>
+
+    <com.meishi.views.InputView
+        android:id="@+id/confirm_password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/inputViewHeight"
+        app:input_icon="@mipmap/password"
+        app:input_hint="@string/con_password"
+        app:is_password="true">
+
+    </com.meishi.views.InputView>
+
+    <View
+        style="@style/line"/>
+
+
+    <Button
+        style="@style/commitButton"
+        android:text= "@string/register_btn"
+        android:layout_marginTop="@dimen/marginSize"
+        android:onClick="onRegisterClick"/>
+</LinearLayout>

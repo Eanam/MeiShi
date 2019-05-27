@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/marginSize">
+
+    <ImageView
+        android:id="@+id/iv_goodPic"
+        android:layout_width="@dimen/idtemIconHeight"
+        android:layout_height="@dimen/itemIconWidth"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/itemMargin"/>
+
+    <TextView
+        android:id="@+id/tv_goodName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_goodPic"
+        android:layout_alignParentTop="true"
+        android:textSize="@dimen/titleSize"
+        android:text="菜名"
+        android:textStyle="bold"
+        android:layout_margin="@dimen/itemMargin"/>
+
+    <com.meishi.views.StarBar
+        android:id="@+id/sb_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_goodPic"
+        android:layout_below="@+id/tv_goodName"
+        app:starCount="5"
+        app:starDistance="2dp"
+        app:starSize="11dp"
+        app:starEmpty="@drawable/ic_empty"
+        app:starFill="@drawable/ic_full"
+        android:layout_margin="@dimen/itemMargin" />
+
+    <TextView
+        android:id="@+id/tv_goodDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_goodPic"
+        android:layout_below="@id/sb_point"
+        android:layout_margin="@dimen/itemMargin"
+        android:padding="1dp"
+        android:textSize="@dimen/textSize"
+        android:text="这里添加菜品描述"
+        android:maxLines="2"
+        android:ellipsize="end"/>
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/tv_goodName"
+        android:layout_margin="@dimen/itemMargin"
+        android:textSize="@dimen/titleSize"
+        android:textColor="@android:color/holo_orange_light"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_price"
+        android:layout_toLeftOf="@id/tv_price"
+        android:layout_margin="@dimen/itemMargin"
+        android:src="@mipmap/yuan"/>
+
+</RelativeLayout>
